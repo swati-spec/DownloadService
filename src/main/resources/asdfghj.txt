@@ -1,0 +1,51 @@
+/* async onClick() {
+   
+      axios.get('http://localhost:8087/downloadFile',
+     
+      {
+         headers: {
+            'Content-Type': 'application/json'
+          }
+      }).then(response => {
+           this.schema=response.data; 
+           this.showMenu=true; 
+          })
+        .catch(function (err) {
+          console.log('FAILURE!!'+err)
+        })
+      this.showMenu=!this.showMenu;
+    }
+
+*/
+  /* onClick(){
+      this.axios.get('http://localhost:8087/downloadFile')
+
+
+    
+
+
+
+
+
+      
+  }, */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ headers: {
+             'Content-Type': 'application/json'
+          }
+ method:'GET',
+                  responseType:'blob',

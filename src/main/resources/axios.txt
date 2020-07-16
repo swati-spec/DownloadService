@@ -1,0 +1,12 @@
+axios({
+          url:http://localhost:8082/LICENSE.txt",
+          method:'GET',
+          responseType:'text'
+        }).then((response) => {
+          var fileUrl=window.URL.createObjectURL(new Text([response.data]))
+          var fileLink=document.createElement('a')
+          fileLink.href=fileUrl
+          fileLink.setAttribute('download','License.txt')
+          document.body.appendChild(fileLink)
+          fileLink.click()
+        })
